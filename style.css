@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+header{ 
+    background: #22C3A3;
+}
+
+/* logo */
+header .header_wrap .logo{
+    float: left;
+    width: 30%;
+}
+header .header_wrap .logo a{
+    padding: 22px 0;
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/* menu */
+header .header_wrap .menu{
+    float: right;
+    width: 70%;
+}
+
+header .header_wrap .menu ul li{
+    display: inline-block;
+    list-style: none;
+   
+}
+
+header .header_wrap .menu ul li a{
+    padding: 22px 20px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    
+    text-transform: uppercase;
+}
+/* end header sec  */
+
+
+/* section_one */
+.section_one{
+    background: url("bg.png") no-repeat center;
+    width: 100%;
+    background-size: cover;
+    
+
+}
+.section_one .section_content{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+
+}
+.section_one .section_content h2{
+    padding-top: 350px;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.section_one .section_content p{
+    padding: 75px;
+    font-size: 35px;
+    color: aliceblue;
+}
+.section_one .section_content a{
+    margin-bottom: 350px;
+    padding: 10px 13px;
+    display: inline-block;
+    font-size: 35px;
+    color: aliceblue;
+    text-decoration: none;
+    border: 1px solid aliceblue;
+}
+/* end section_one */
+
+
+/*  section_two */
+.section_two1{
+    margin: 70px 0;
+}
+.section_two1 .section_two1_content{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.section_two1 .section_two1_content h2,p{
+    color: rgb(17, 17, 17);
+    padding: 7px;
+}
+.sec_col_wrap{
+    display: block;
+
+    
+}
+.secton_two2{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    display: block;
+    
+    
+}
+.secton_two2 .inner_col{
+    
+    width: 23%;
+    float: left;
+    margin-right: 2%;
+    
+    
+}
+.secton_two2 .inner_col img{
+    width: 45px;
+}
+.secton_two2 .inner_col h2{
+    padding: 10px 0;
+}
+
+
+.border{
+    border-bottom: 2px solid #22C3A3;
+   color: #0DBF9B;
+    clear: both;
+    display: block;
+}
+.about_sec{
+    text-align: center;
+    margin: 40px 0;
+}
+.content{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    clear: both;
+    height: auto;
+    display: block;
+    margin-bottom: 100px;
+}
+.content .img{
+    width: 40%;
+    float: left;
+
+    
+}
+.content .img img{
+    width: 100%;
+}
+.content .text{
+    width: 60%;
+    float: right; 
+    padding-left: 80px;
+}
+.content .text h2{
+    padding-top: 10px;
+}
+.contracts_sec{
+    clear: both;
+}
+.contracts_sec {
+    background: #ececec;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.cont{
+    width: 100%;
+    margin: auto;
+}
+.contracts_sec .text{
+    display: block;
+    text-align: center;
+    padding: 70px 0;
+ 
+}
+.main_contract{
+    overflow: auto;
+}
+.contracts_sec .contract_info{
+    float: left;
+    text-align: center;
+    width: 33%;
+}
+
+.contracts_sec .contract_info img{
+    width: 60px;
+}
+
+
+
+footer .social_icon{
+    text-align: center;
+    background: #0DBF9B;
+}
+footer .social_icon img{
+    width: 50px;
+    padding: 10px;
+}
+footer .copyright{
+    background:#222222 ;
+    text-align: center;
+    padding: 10px;
+}
+footer .copyright p{
+    color: #727171;
+}
+
+@media (max-width:980px){
+    header .header_wrap .logo {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header .header_wrap .menu {
+        float: none;
+        width: 100%;
+    }
+    header .header_wrap .menu ul li {
+        display: block;
+        margin-bottom: 1px;
+    }
+
+    header .header_wrap .menu ul li a {
+        display: block;
+        margin-bottom: 1px;
+        text-align: left;
+    }
+    .secton_two2 .inner_col{
+        width: 48%;
+        margin-top: 10px;
+        
+    }
+    .content .img {
+        width: 100%;
+        float: none;
+    }
+    .content .text {
+        width: 100%;
+        float: none;
+        margin-top: 20px;
+    }
+    .contracts_sec .contract_info img {
+        width: 30px;
+    }
+}
+@media (max-width:720px){
+    header .header_wrap .menu {
+       
+    }
+    .secton_two2 .inner_col{
+        width: 100%;
+        margin: 20px auto;
+        padding: 0 100px;
+    }
+    .border {
+        display: none;
+    }
+    .content .text {
+       padding: 25px;
+       text-align: center;
+    }
+    .main_contract p{
+        font-size: 14px;
+    }
+    .contracts_sec .contract_info img{
+        width: 20px;
+    }
+
+}
